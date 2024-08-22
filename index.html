@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conta Gmail</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+
+  <body>
+    <div class="login-container" id="loginContainer">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      <div class="login-header">Conta Gmail</div>
+      <div class="login-form">
+        <form class="form">
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <div class="d-flex justify-content-between mt-3">
+            <div
+              class="create-account d-flex justify-content-center flex-column"
+            >
+              <span>Já tem cadastro?</span>
+              <a href="#" class="link-cadastro">Clique aqui!</a>
+            </div>
+            <button type="button" class="btn-logar" id="logarBtn">LOGAR</button>
+          </div>
+        </form>
+        <div class="container-image d-flex align-items-center">
+          <img src="./src/img/logo_google.png" alt="Google logo" class="logo" />
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="overlay-text">Seja bem-vindo!</div>
+      </div>
+    </div>
+    <button id="openBtn" class="open-btn">Abrir Container</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
